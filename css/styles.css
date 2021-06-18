@@ -1,0 +1,230 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/* ----------------------------nav----------------------------------- */
+nav {
+  align-items: center;
+  display: flex;
+  height: 118px;
+  justify-content: space-between;
+}
+
+nav a {
+  background-color: #e51a73;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 12px;
+  margin: 120px 33px;
+  padding: 18px 50px;
+  text-decoration: none;
+}
+
+nav ul {
+  align-content: flex-end;
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin:9px;
+}
+
+.items {
+  margin-right: 100px;
+}
+
+/* ----------------------------main----------------------------------- */
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+/*Primera section */
+
+.primera {
+  background-image: url("../img/backgroundHero.png");
+  background-size: cover;
+}
+
+/*Primera-parte (Div)*/
+
+.primera-parte {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  justify-content: center;
+  padding-left: 600px;
+}
+
+.primera-parte p{
+  font-weight: normal;
+  margin: 10px;
+}
+
+.primera-parte h2{
+  font-size: 30px;
+  margin: 10px;
+}
+
+.descuentos {
+  background-color: #e51a73;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: normal;
+  margin: 10px;
+  padding: 8px 49px;
+  text-decoration: none;
+}
+
+.comprar {
+  border: 1px solid #222222;
+  color: #222222;
+  margin: 10px;
+  padding: 9px 33px;
+  text-decoration: none;
+}
+
+/*Segunda-parte (Div)*/
+
+.segunda-parte {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.imagen {
+  align-items: flex-end;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  margin: 35px 0px;
+  padding: 47px 12px 47px 158px;
+  text-align: center;
+}
+
+.enlace1, .enlace2 {
+  color: #c00a27;
+  font-size: 16px;
+  margin: 15px 0px;
+}
+
+.enlace1 {
+  text-decoration: none;
+}
+
+/*Elementos del main */
+
+main h3 {
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 41px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+main img {
+  margin: 30px auto;
+}
+
+/*Div Contenedor Remeras */
+
+.contenedor-remera {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/*Div compras remeras*/
+
+.remeras {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.remeras h2, p {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.remeras img {
+  border-radius: 5px;
+  border: 1px solid rgba(34, 34, 34, 0.12);
+  margin-bottom: 10px;
+}
+
+.remeras p {
+  color: #e51a73;
+  margin-top: 10px;
+}
+
+/*Tercera-parte (Div)*/
+
+.tercera-parte{
+  align-items: center;
+  background-image: url("../img/foto.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  justify-content: center;
+  margin: 61px 0px;
+  padding-right: 600px;
+}
+
+.tercera-parte p{
+  font-weight: normal;
+  margin: 10px;
+}
+
+.tercera-parte h2{
+  font-size: 30px;
+  margin: 10px;
+  padding: 20px 0px;
+}
+
+/*Cuarta-parte (Div)*/
+
+.cuarta-parte{
+  background-color: #F3F3F3;
+  display:flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.cuarta-parte ul{
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 22px 50px 30px 50px;
+}
+.cuarta-parte ul h3{
+  font-size: 20px;
+  margin: 10px;
+  text-align: left;
+  text-decoration: none;
+}
+.cuarta-parte ul li{
+  align-items: center;
+  display:flex;
+  font-size: 20px;
+  justify-content: space-around;
+  line-height: 23px;
+  margin: 10px;
+}
+
+/* Div (gracias) */
+.contenedor-form{
+  display: flex;
+}
+.gracias{
+  background-color: #FE8EBD;
+  max-height: 371px;
+}
+
+.cuarta-parte ul li img{
+  margin: 10px;
+}
