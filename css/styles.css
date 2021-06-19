@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,300;0,500;1,200&display=swap');
+
 * {
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: 'Work Sans';
   margin: 0;
   padding: 0;
 }
+
 /* ----------------------------nav----------------------------------- */
+
 nav {
   align-items: center;
   display: flex;
@@ -12,7 +16,11 @@ nav {
   justify-content: space-between;
 }
 
-nav a {
+.lista{
+  display:none;
+}
+
+.logo{
   background-color: #e51a73;
   border-radius: 20px;
   color: #ffffff;
@@ -20,6 +28,7 @@ nav a {
   margin: 120px 33px;
   padding: 18px 50px;
   text-decoration: none;
+  transition: all  1.5s;
 }
 
 nav ul {
@@ -30,6 +39,16 @@ nav ul {
 
 nav ul li {
   margin:9px;
+}
+
+.enlace-nav{
+  color: #222222;
+  text-decoration: none;
+  transition: all 3ms;
+}
+
+.enlace-nav:hover{
+  color:#e51a73;
 }
 
 .items {
@@ -43,15 +62,15 @@ main {
   flex-direction: column;
 }
 
-/*Primera section */
+/*PRIMERA SECTION*/
 
 .primera {
   background-image: url("../img/backgroundHero.png");
   background-size: cover;
 }
 
-/*Primera-parte (Div)*/
 
+/*Primera-parte (Div)*/
 .primera-parte {
   align-items: center;
   display: flex;
@@ -61,12 +80,14 @@ main {
   padding-left: 600px;
 }
 
-.primera-parte p{
+.primera-parte p, .tercera-parte p{
+  font-size: 20px;
+  font-style: normal;
   font-weight: normal;
   margin: 10px;
 }
 
-.primera-parte h2{
+.primera-parte h2,.tercera-parte h2{
   font-size: 30px;
   margin: 10px;
 }
@@ -86,11 +107,13 @@ main {
   color: #222222;
   margin: 10px;
   padding: 9px 33px;
+  text-align: center;
   text-decoration: none;
 }
+/*FIN PRIMERA SECTION */
+
 
 /*Segunda-parte (Div)*/
-
 .segunda-parte {
   display: flex;
   justify-content: space-evenly;
@@ -104,6 +127,10 @@ main {
   margin: 35px 0px;
   padding: 47px 12px 47px 158px;
   text-align: center;
+  transition: all 1.5s;
+}
+.imagen:hover{
+  transform: scale(1.10);
 }
 
 .enlace1, .enlace2 {
@@ -113,36 +140,53 @@ main {
 }
 
 .enlace1 {
-  text-decoration: none;
+  text-decoration:none;
 }
+/*FIN Segunda-parte (Div)*/
+
 
 /*Elementos del main */
-
 main h3 {
   font-size: 35px;
   font-weight: 500;
   line-height: 41px;
+  margin-top: 38px;
   text-align: center;
   text-decoration: underline;
 }
 
-main img {
+.menu-desaparece {
   margin: 30px auto;
 }
+.menu-aparece{
+  display:none;
+}
+/*FIN Elementos del main */
+
 
 /*Div Contenedor Remeras */
-
 .contenedor-remera {
   display: flex;
   justify-content: space-evenly;
 }
+/*FIN Div Contenedor Remeras */
+
 
 /*Div compras remeras*/
-
-.remeras {
+.remera{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  transition: all 1.5s;
+}
+
+.remera:hover p{
+  color:#8400ff
+}
+
+.remera:hover{
+  background-color:#f3b8d2;
+  transform: scale(1.10);
 }
 
 .remeras h2, p {
@@ -159,11 +203,13 @@ main img {
 
 .remeras p {
   color: #e51a73;
-  margin-top: 10px;
+  margin: 10px 0px 18px 0px;
 }
+/* FIN Div compras remeras*/
 
+
+/* SEGUNDA SECTION */
 /*Tercera-parte (Div)*/
-
 .tercera-parte{
   align-items: center;
   background-image: url("../img/foto.png");
@@ -175,56 +221,248 @@ main img {
   margin: 61px 0px;
   padding-right: 600px;
 }
+/*FIN Tercera-parte (Div)*/
 
-.tercera-parte p{
-  font-weight: normal;
-  margin: 10px;
-}
-
-.tercera-parte h2{
-  font-size: 30px;
-  margin: 10px;
-  padding: 20px 0px;
-}
 
 /*Cuarta-parte (Div)*/
-
 .cuarta-parte{
   background-color: #F3F3F3;
   display:flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin-bottom: 20px;
 }
+
 .cuarta-parte ul{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   list-style-type: none;
   padding: 22px 50px 30px 50px;
 }
-.cuarta-parte ul h3{
-  font-size: 20px;
-  margin: 10px;
-  text-align: left;
-  text-decoration: none;
-}
+
 .cuarta-parte ul li{
   align-items: center;
   display:flex;
   font-size: 20px;
-  justify-content: space-around;
   line-height: 23px;
   margin: 10px;
 }
+
+.cuarta-parte ul li img{
+  margin: 10px;
+}
+/*FIN Cuarta-parte (Div)*/
+
 
 /* Div (gracias) */
 .contenedor-form{
   display: flex;
 }
+
 .gracias{
+  align-items:flex-start;
   background-color: #FE8EBD;
+  color: #515486;
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  margin: 24px 0px;
   max-height: 371px;
+  padding: 166px 20px;
 }
 
-.cuarta-parte ul li img{
-  margin: 10px;
+hr {
+  background-color: #FCFCFC;
+  border: none;
+  height: 5px;
+  margin-top: 5px;  
+  width: 18%;
+}
+/* FIN Div (gracias) */
+
+
+/* Formulario */
+form{
+  background-color: #FCFCFC;
+  margin: 22px 0px;
+  padding: 17px 50px;
+}
+
+form h2{
+  color: #515486;
+  font-size: 24px;
+  margin-bottom: 35px;
+}
+
+.campos{
+  display: flex;
+  flex-direction: column;
+}
+
+.campos input {
+  background-color: #F6F7F9;
+  border-radius: 12px;
+  border:none;
+  color: #515486;
+  font-size: 13px;
+  line-height: 25px;
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 260px;
+}
+
+textarea {
+  background-color: #F6F7F9;
+  border-radius: 12px;
+  border: none;
+  font-size: 13px;
+  height: 90px;
+  line-height: 25px;
+  margin-bottom: 7px;
+  padding: 10px;
+  width: 260px;
+}
+
+.boton1,.boton2{
+  margin: 2%;
+  width: 45%;
+}
+
+.boton1{
+  background-color: #222222;
+  border-radius: 12px;
+  border: none;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 15px 0px;
+  padding: 13px 10px;
+  transition: all 1s;
+}
+
+.boton2{
+  background-color: #E51A73;
+  border-radius: 12px;
+  border: none;
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 15px 0px;
+  padding: 13px 20px;
+  transition: all 1s;
+}
+
+.boton1:hover{
+  background-color:#6e6e6e;
+}
+
+.boton2:hover{
+  background-color:#FE8EBD;
+}
+
+::placeholder{
+  color: #515486;
+  font-size: 13px;
+  font-weight: bold;
+}
+/* FIN Formulario */
+/* FIN SEGUNDA SECTION  */
+
+
+/* --------------------------Footer----------------------------------- */
+
+footer{
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 15px;
+  margin-bottom: 17px;
+}
+
+/* --------------------------Media query css----------------------------------- */
+
+@media (max-width: 450px) {
+  .logo{
+    display: flex;
+    margin: 13px 134px 12px 23px;
+  }
+  .categorias{
+    display: none;
+  }  
+  .items{
+    margin-right: 30px;
+  }
+  .lista{
+    display:flex;
+    margin-top:3px;
+  }
+  .primera{
+    background-position-x: -26px;
+  }
+  .primera-parte {
+    max-height: 250px;
+    padding-left: 206px;
+  }
+  .primera-parte p,.tercera-parte p{
+    font-size: 13px;  
+    margin: 0px;
+  }  
+  .primera-parte h2,.tercera-parte h2{
+    font-size: 15px;
+    margin: 5px;
+  }
+  .descuentos {
+    font-size: 13px;
+    margin: 5px;
+    padding: 3px 10px;
+  }  
+  .comprar {
+    font-size: 10px;
+    margin: 5px;
+    padding: 4px 23px;
+  }
+  .segunda-parte {
+    align-items:center;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  main h3 {
+    font-size: 30px; 
+    margin-top: 0px;
+  }
+  .menu-desaparece{
+    display:none;
+  }
+  .menu-aparece{
+    display: flex;
+    margin: 30px auto;
+  }
+  .contenedor-remera {
+    align-items:center;
+    flex-direction: column;
+  }
+  .imagen{
+    margin: 20px;
+  }  
+  .tercera-parte{
+    background-position-x: -53px;
+    margin: 10px 0px;
+    max-height: 250px;
+    padding-right: 206px; 
+  }  
+  .cuarta-parte{
+    flex-direction: column;
+  }  
+  .contenedor-form{
+    flex-direction: column;
+  }
+  .gracias{
+    padding: 79px 20px;
+  }  
+  form{
+    align-items: center;
+  }
+  .campos input, .campos textarea{
+    margin-bottom: 10px;
+    width: 315px;
+  }
 }
